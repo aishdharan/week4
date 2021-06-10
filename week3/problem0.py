@@ -5,11 +5,10 @@ import random
 
 def main():
     r = int(input("Give a range: "))
-    K = int(input("Give value of k: "))
-    X = random.choices(range(r), k=K)
-    X_list = list(X)
-    print(X_list)
-
+    l = int(input("Give value of k: "))
+    x = random.choices(range(r), k=l)
+    x_list = list(x)
+    print(x_list)
     return os.X_OK
 
 
