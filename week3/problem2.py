@@ -38,29 +38,29 @@ by far one of the best skills you can ever develop: good naming.
 
 
 def main():
-    a = int(input("a = "))
-    b = int(input("b = "))
-    c = int(input("c = "))
-    d = int(input("d = "))
-    e = int(input("e = "))
-    f = int(input("f = "))
-    g = int(input("g = "))
-    h = int(input("h = "))
+    A11 = int(input("A11 = "))
+    A12 = int(input("A12 = "))
+    A13 = int(input("A13 = "))
+    A14 = int(input("A14 = "))
+    B11 = int(input("B11 = "))
+    B12 = int(input("B12 = "))
+    B13 = int(input("B13 = "))
+    B14 = int(input("B14 = "))
     # fixme: replace list1 (generic name)
-    list1 = [[a, b],
-             [c, d]]
-    print(f'list1 = {list1}')
+    A1 = [[A11, A12],
+             [A13, A14]]
+    print(f'First Matrix = {A1}')
     # fixme: replace list2
-    list2 = [[e, f],
-             [g, h]]
-    print(f'list2 = {list2}')
-    w = a * e + b * g
-    x = a * f + b * h
-    y = c * e + d * g
-    z = c * f + d * h
-    list3 = [[w, x],
-             [y, z]]
-    print(f'list1 x list2 = {list3}')
+    B1 = [[B11, B12],
+             [B13, B14]]
+    print(f'Second Matrix = {B1}')
+    C11 = A11 * B11 + A12 * B13
+    C12 = A11 * B12 + A12 * B14
+    C13 = A13 * B11 + A14 * B13
+    C14 = A13 * B12 + A14 * B14
+    C1 = [[C11, C12],
+             [C13, C14]]
+    print(f'First Matrix x Second Matrix = {C1}')
 
     return os.X_OK
 
