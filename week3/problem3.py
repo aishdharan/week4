@@ -2,6 +2,11 @@ import os
 import sys
 import random
 
+"""
+Notes:
+- Please rename variables
+- Otherwise excellent attempt
+"""
 
 def main():
     x = random.choices(range(5), k=20)

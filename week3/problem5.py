@@ -1,6 +1,12 @@
 import os
 import sys
 
+"""
+Notes:
+- This is an excellent illustration of 'running out of variables'
+- Please see inline note 1 below
+"""
+
 
 def main():
     a = int(input("a = "))
@@ -30,6 +36,11 @@ def main():
              [m, n, o],
              [p, q, r]]
     print(f'list2 = {list2}')
+    """
+    inline note 1:
+    - I don't doubt the calculation below is correct but by being
+    very hard to read it becomes prone to bugs.
+    """
     s = a * j + b * m + c * p
     t = a * k + b * n + c * q
     u = a * l + b * o + c * r
@@ -42,6 +53,8 @@ def main():
     list3 = [[s, t, u],
              [v, w, x],
              [y, z, _a]]
+    # fixme: the user doesn't need to know the
+    #  names of your variables; all they want is the name of matrices
     print(f'list1 x list2 = {list3}')
 
     return os.X_OK

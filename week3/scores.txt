@@ -1,0 +1,17 @@
+problem/score
+0/3
+1/9
+2/8
+3/9
+4/-
+5/8
+6/-
+7/-
+8/-
+9/-
+Total/29
+# revise problem0.py to receive full marks (it was just a matter of understanding the question)
+# revise problem1.py to receive full marks
+# revise problem2.py to receive full marks
+# revise problem3.py to receive full marks
+# revise problem5.py to receive full marks
