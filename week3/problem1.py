@@ -20,11 +20,7 @@ def main():
     r = int(input("Give a number: "))
     x = random.choices(range(10), k=10)
     print(x)
-    print(f"You win? {r in x}")  # this is sufficient
-    # if r in x:
-    #     print("You win!")
-    # else:
-    #     print("You lose :(")
+    print(f"You win? {r in x}")
     return os.X_OK
 
 
