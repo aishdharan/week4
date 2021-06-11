@@ -18,9 +18,9 @@ the thinking process.
 
 def main():
     r = int(input("Give a number: "))
-    x = random.choices(range(10), k=10)
-    print(x)
-    print(f"You win? {r in x}")
+    r_rand = random.choices(range(10), k=10)
+    print(r_rand)
+    print(f"You win? {r in r_rand}")
     return os.X_OK
 
 

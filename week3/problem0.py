@@ -16,10 +16,10 @@ adds squiggles to your variables when they are ambiguous
 
 def main():
     r = int(input("Give a range: "))
-    l = int(input("Give value of k: "))
-    x = random.choices(range(r), k=l)
-    x_list = list(x)
-    print(x_list)
+    r_k = int(input("Give value of k: "))
+    r_rand = random.choices(range(r), k=r_k)
+    r_list = list(r_rand)
+    print(r_list)
     return os.X_OK
 
 
