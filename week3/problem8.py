@@ -11,7 +11,7 @@ def main():
     try:
         assert 0 <= r < 10
     except AssertionError:
-        print(f"error: invalid number {r}. Give a number >0 and <10")
+        print(f"error: invalid number {r}. Give a number =>0 and <10")
         return os.X_OK
 
 
