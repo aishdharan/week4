@@ -15,11 +15,12 @@ adds squiggles to your variables when they are ambiguous
 
 
 def main():
-    r = int(input("Give a range: "))
+    r1 = int(input("Give start range: "))
+    r2 = int(input("Give end range: "))
     r_k = int(input("Give value of k: "))
-    r_rand = random.choices(range(r), k=r_k)
-    r_list = list(r_rand)
-    print(r_list)
+    r_rand = random.choices(range(r1, r2), k=r_k)
+    rand_list = list(r_rand)
+    print(rand_list)
     return os.X_OK
 
 
