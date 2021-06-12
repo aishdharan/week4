@@ -1,6 +1,5 @@
 import os
 import sys
-import random
 
 """
 Notes (updated notes at the top):
@@ -18,12 +17,11 @@ adds squiggles to your variables when they are ambiguous
 
 def main():
 
-    r1 = int(input("Give start range: "))
-    r2 = int(input("Give end range: "))
-    r_k = int(input("Give value of k: "))
-    r_rand = random.choices(range(r1, r2), k=r_k)
-    rand_list = list(r_rand)
-    print(rand_list)
+    r_start = int(input("Give start range: "))
+    r_stop = int(input("Give end range: "))
+    r_step = int(input("Give step value: "))
+    r_list = list(range(r_start, r_stop, r_step))
+    print(r_list)
     return os.X_OK
 
 
