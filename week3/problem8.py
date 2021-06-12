@@ -18,7 +18,7 @@ def main():
         assert 0 <= r < 10
     except AssertionError:
         print(f"error: invalid number {r}. Give a number =>0 and <10")
-        return os.X_OK
+    return os.X_OK
 
 
 if __name__ == "__main__":
