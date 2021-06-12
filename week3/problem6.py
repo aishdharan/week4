@@ -19,9 +19,9 @@ def main():
     coord_z2 = int(input("z2 = "))
     pt_b = [coord_x2, coord_y2, coord_z2]
     print(f"Coordinates of B{pt_b}")
-    dist_a_b = math.sqrt(((coord_x1 - coord_x2) ** 2) + ((coord_y1 - coord_y2) ** 2) + ((coord_z1 - coord_z2) ** 2))
-    dist_a_o = math.sqrt(((coord_x1 - coord_x0) ** 2) + ((coord_y1 - coord_y0) ** 2) + ((coord_z1 - coord_z0) ** 2))
-    dist_b_o = math.sqrt(((coord_x2 - coord_x0) ** 2) + ((coord_y2 - coord_y0) ** 2) + ((coord_z2 - coord_z0) ** 2))
+    dist_a_b = math.sqrt(((pt_a[0] - pt_b[0]) ** 2) + ((pt_a[1] - pt_b[1]) ** 2) + ((pt_a[2] - pt_b[2]) ** 2))
+    dist_a_o = math.sqrt(((pt_a[0] - pt_o[0]) ** 2) + ((pt_a[1] - pt_o[1]) ** 2) + ((pt_a[2] - pt_o[2]) ** 2))
+    dist_b_o = math.sqrt(((pt_b[0] - pt_o[0]) ** 2) + ((pt_b[1] - pt_o[1]) ** 2) + ((pt_b[2] - pt_o[2]) ** 2))
     print(f"The distance between points A and B in 3D space is: {dist_a_b}")
     print(f"The distance between points A and Origin in 3D space is: {dist_a_o}")
     print(f"The distance between points B and Origin in 3D space is: {dist_b_o}")
