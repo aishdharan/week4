@@ -31,9 +31,10 @@ def main():
     a_mag = math.sqrt((pt_a[0] ** 2) + (pt_a[1] ** 2) + (pt_a[2] ** 2))
     b_mag = math.sqrt((pt_b[0] ** 2) + (pt_b[1] ** 2) + (pt_b[2] ** 2))
     o_mag = math.sqrt((pt_o[0] ** 2) + (pt_o[1] ** 2) + (pt_o[2] ** 2))
+    mag_ab = (a_mag * b_mag)
     mag_ao = (a_mag * o_mag)
     mag_bo = (b_mag * o_mag)
-    ang_a_b = math.acos(a_mul_b / (a_mag * b_mag))
+    ang_a_b = math.acos(a_mul_b / mag_ab)
     print(f"angle between A and B is {ang_a_b}")
     try:
         ang_a_o = math.acos(a_mul_o / mag_ao)
