@@ -16,7 +16,6 @@ adds squiggles to your variables when they are ambiguous
 
 
 def main():
-
     r_start = int(input("Give start range: "))
     r_stop = int(input("Give end range: "))
     r_step = int(input("Give step value: "))
