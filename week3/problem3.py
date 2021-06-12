@@ -8,6 +8,7 @@ Notes:
 - Otherwise excellent attempt
 """
 
+
 def main():
     x = random.choices(range(5), k=20)
     x0 = x.count(0)
