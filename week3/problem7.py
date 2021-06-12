@@ -1,6 +1,15 @@
 import os
 import sys
 
+"""
+Notes:
+- Excellent work! You not only captured the ZeroDivisionError
+but you also handled a ValueError
+- Good variable names in line with the domain (math). Keep in mind
+we always want to remember the domain because it will be easy for
+users in that domain to understand the variable names without effort.
+"""
+
 
 def main():
     try:

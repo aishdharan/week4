@@ -3,7 +3,9 @@ import sys
 import random
 
 """
-Notes:
+Notes (updated notes at the top):
+- range(start, stop, step): ask the user for start, stop and step. That's all that's required.
+It doesn't need to be random.
 - The questions required you to view the arguments of the range function
 then ask the user for them. You can find the documentation of range at 
 https://docs.python.org/3/library/stdtypes.html#ranges
@@ -15,6 +17,7 @@ adds squiggles to your variables when they are ambiguous
 
 
 def main():
+
     r1 = int(input("Give start range: "))
     r2 = int(input("Give end range: "))
     r_k = int(input("Give value of k: "))
