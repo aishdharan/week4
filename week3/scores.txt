@@ -1,15 +1,15 @@
 problem/score
-0/3
+0/10
 1/10
 2/10
 3/10
 4/10
-5/8
-6/-
+5/9
+6/7
 7/10
-8/7
-9/9
+8/10
+9/10 # Bravo!
 Total/77
 # revise problem0.py to receive full marks (it was just a matter of understanding the question)
-# revise problem5.py to receive full marks
+# revise problem6.py to receive more marks
 # revise problem8.py to receive full marks

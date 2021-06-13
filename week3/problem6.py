@@ -2,13 +2,32 @@ import os
 import sys
 import math
 
+"""
+Notes:
+- Your program converts user input to int? What limitation does this impose?
+- I entered (1, 1, 1) and (2, 2, 2) and received:
+Traceback (most recent call last):
+  File "/Users/paulkorir/sci2pro/aishdharan/week3/week3/problem6.py", line 61, in <module>
+    sys.exit(main())
+  File "/Users/paulkorir/sci2pro/aishdharan/week3/week3/problem6.py", line 42, in main
+    ang_a_b = math.acos(a_mul_b / mag_ab)
+ValueError: math domain error
+
+Determine the cause and fix it.
+- For pt_* variables: is it better to use a tuple or a list? 
+Why? Consider the key property differences between a tuple and list
+ when deciding this.
+"""
+
 
 def main():
+    # fixme: it is OK to use x0, y0, z0 as variables since
+    #  they will make sense in the application domain (geometry)
     coord_x0 = 0
     coord_y0 = 0
     coord_z0 = 0
     pt_o = (coord_x0, coord_y0, coord_z0)
-    print(f"Coordinates of Origin{pt_o}")
+    print(f"Origin{pt_o}")
     coord_x1 = int(input("x1 = "))
     coord_y1 = int(input("y1 = "))
     coord_z1 = int(input("z1 = "))

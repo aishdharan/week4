@@ -16,10 +16,11 @@ adds squiggles to your variables when they are ambiguous
 
 
 def main():
-    r_start = int(input("Give start range: "))
-    r_stop = int(input("Give end range: "))
-    r_step = int(input("Give step value: "))
-    r_list = list(range(r_start, r_stop, r_step))
+    # simpler is simply the names of the arguments as the occur in range()
+    start = int(input("Give start range: "))
+    stop = int(input("Give end range: "))
+    step = int(input("Give step value: "))
+    r_list = list(range(start, stop, step))
     print(r_list)
     return os.X_OK
 
