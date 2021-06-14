@@ -23,20 +23,21 @@ Why? Consider the key property differences between a tuple and list
 def main():
     # fixme: it is OK to use x0, y0, z0 as variables since
     #  they will make sense in the application domain (geometry)
-    coord_x0 = 0
-    coord_y0 = 0
-    coord_z0 = 0
-    pt_o = (coord_x0, coord_y0, coord_z0)
+    x0 = 0
+    y0 = 0
+    z0 = 0
+    pt_o = [x0, y0, z0]
+    # changed to list; if change one of the coordinates midway the code-> can't be done if it's a tuple
     print(f"Origin{pt_o}")
-    coord_x1 = int(input("x1 = "))
-    coord_y1 = int(input("y1 = "))
-    coord_z1 = int(input("z1 = "))
-    pt_a = [coord_x1, coord_y1, coord_z1]
+    x1 = float(input("x1 = "))
+    y1 = float(input("y1 = "))
+    z1 = float(input("z1 = "))
+    pt_a = [x1, y1, z1]
     print(f"Coordinates of A{pt_a}")
-    coord_x2 = int(input("x2 = "))
-    coord_y2 = int(input("y2 = "))
-    coord_z2 = int(input("z2 = "))
-    pt_b = [coord_x2, coord_y2, coord_z2]
+    x2 = float(input("x2 = "))
+    y2 = float(input("y2 = "))
+    z2 = float(input("z2 = "))
+    pt_b = [x2, y2, z2]
     print(f"Coordinates of B{pt_b}")
     dist_a_b = math.sqrt(((pt_a[0] - pt_b[0]) ** 2) + ((pt_a[1] - pt_b[1]) ** 2) + ((pt_a[2] - pt_b[2]) ** 2))
     dist_a_o = math.sqrt(((pt_a[0] - pt_o[0]) ** 2) + ((pt_a[1] - pt_o[1]) ** 2) + ((pt_a[2] - pt_o[2]) ** 2))
@@ -53,7 +54,14 @@ def main():
     mag_ab = (a_mag * b_mag)
     mag_ao = (a_mag * o_mag)
     mag_bo = (b_mag * o_mag)
-    ang_a_b = math.acos(a_mul_b / mag_ab)
+    try:
+        ang_a_b = math.acos(a_mul_b / mag_ab)
+    except ZeroDivisionError as zde:
+        print(f"Warning: {zde}; the denominator is zero")
+        ang_a_b = "indefinite number"
+    except ValueError as ve:
+        print(f"Warning: {ve}; denominator < numerator")
+        ang_a_b = "undefined"
     print(f"angle between A and B is {ang_a_b}")
     try:
         ang_a_o = math.acos(a_mul_o / mag_ao)
