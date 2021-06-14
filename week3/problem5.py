@@ -3,7 +3,7 @@ import sys
 
 """
 Notes:
-- This is A11n excellent illustration of 'running out of variables'
+- This is An excellent illustration of 'running out of variables'
 - Please see inline note 1 below
 """
 
@@ -29,13 +29,17 @@ def main():
     B18 = float(input("B18 = "))
     B19 = float(input("B19 = "))
 
-    A = [[A11, A12, A13],
+    A = [
+        [A11, A12, A13],
          [A14, A15, A16],
-         [A17, A18, A19]]
+         [A17, A18, A19]
+    ]
     print(f'A = {A}')
-    B = [[B11, B12, B13],
+    B = [
+        [B11, B12, B13],
          [B14, B15, B16],
-         [B17, B18, B19]]
+         [B17, B18, B19]
+    ]
     print(f'B = {B}')
     """
     inline note 1:
@@ -58,7 +62,7 @@ def main():
         [C17, C18, C19]
     ]
     # since we asked for A** and B** we can report A * B
-    print(f'A * B = {C}')
+    print(f"matrix multiplication of 3x3 with 3x3 is A * B = {C}")
 
     return os.X_OK
 
