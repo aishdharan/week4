@@ -8,6 +8,8 @@ def main():
         print("Add more characters")
     elif len(usr_char) > 10:
         print("Please add 10 characters only.")
+    else:
+        print("10 characters added")
     usr_dict = dict()
     for k in iter(usr_char):
         print(f"key {k}")
