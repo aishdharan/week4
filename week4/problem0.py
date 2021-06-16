@@ -16,18 +16,17 @@ for k in usr_char:
 
 
 def main():
-    usr_char = input("Give 10 character words: ")
+    usr_char = input("Give word of 10 characters: ")
     # fixme: consider using a try/except block here
-    if len(usr_char) < 10:
-        print("Add more characters")
-    elif len(usr_char) > 10:
-        print("Please add 10 characters only.")
-    else:
-        print("10 characters added")
+    try:
+        assert len(usr_char) == 10
+    except AssertionError:
+        print("Give 10 characters only")
+    print(f"No. of characters given: {len(usr_char)}")
     usr_dict = dict()
     # fixme: you can run a for loop over a string without the need to pass it to iter()
-    for k in iter(usr_char):
-        print(f"key {k}")
+    for k in usr_char:
+        # print(f"key {k}")
         usr_dict[k] = usr_dict.get(k, 0) + 1
 
     print(f"count of all characters: {usr_dict}")
