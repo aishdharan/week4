@@ -37,7 +37,10 @@ def main():
         # print(f"key {k}")
         usr_dict[k] = usr_dict.get(k, 0) + 1
     print(f"count of all characters: {usr_dict}")
-    return os.X_OK
+    # if you're running this on Windows and os.EX_OK gives you an error
+    # replace with 0
+    # return os.X_OK
+    return 0 # OK
 
 
 if __name__ == '__main__':
