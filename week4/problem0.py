@@ -40,7 +40,7 @@ def main():
     # if you're running this on Windows and os.EX_OK gives you an error
     # replace with 0
     # return os.X_OK
-    return 0 # OK
+    return 0  # OK
 
 
 if __name__ == '__main__':
