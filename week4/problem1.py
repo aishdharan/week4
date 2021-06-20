@@ -13,10 +13,16 @@ def main():
     bases = ['A', 'T', 'G', 'C']
     seq = "".join(random.choices(bases, k=100))
     print("Given sequence =", seq)
-    k = int(input("Give k_mer: "))
-    for value in range(len(seq) - k + 1):
-        val_k = seq[value: value + k]
-        print(val_k)
+    print("Length of sequence =", len(seq))
+    for k in range(len(seq)-1):
+        k = int(input("Give k_mer: "))
+        print("%s %13s" % (f'{k}-mer', 'count'))
+        print('-' * 25)
+        for value in range(len(seq) - k + 1):
+            val_k = seq[value: value + k]
+            kmer_count = seq.count(val_k)
+            print("%s %13s" % (val_k, kmer_count))
+        print("=" * 25)
 
     # return os.X_OK
     # https://docs.python.org/3/library/os.html#os.X_OK
