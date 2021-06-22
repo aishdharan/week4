@@ -23,6 +23,8 @@ def main():
     print(unprocessed)
     # files yet to be processed
     # unprocessed = None
+    # todo: files consists the parent set from which we get all files
+    # todo: we can use special dictionary methods to get the keys and values ;-)
 
 
     return 0

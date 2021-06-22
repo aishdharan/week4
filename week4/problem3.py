@@ -1,6 +1,12 @@
 import random
-import sys
 import string
+import sys
+
+"""
+Notes:
+- Well done! I've checked the values carefully and your code
+seems to be doing the right thing.
+"""
 
 
 def main():

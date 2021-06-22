@@ -36,6 +36,12 @@ def main():
 
     txt_list = sorted(txt_list, reverse=True)
 
+    # todo: remember to use a slice here
+    #   suppose you have a list my_list = list(range(100))
+    #   to get the first 20 items you use: my_list[0:20:1]
+    #   or you can use shorthand: my_list[:20]
+    #   since start=0 and step=1 by default
+    #   try the same idea for txt_list
     for wrd in txt_list:
         print(wrd)
     # I'm not getting how to sort the list in top 10 in descending order.

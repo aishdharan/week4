@@ -11,10 +11,13 @@ Notes/Questions:
 
 def main():
     bases = ['A', 'T', 'G', 'C']
-    seq = "".join(random.choices(bases, k=100))
+    seq = "".join(random.choices(bases, k=100))  # Good!
     print("Given sequence =", seq)
     print("Length of sequence =", len(seq))
+    # fixme: we only need k to be 3 to 7
+    #   start by solving the problem for k=3; the rest will follow
     for k in range(len(seq)-1):
+        # fixme: here k from for loop is overwritten
         k = int(input("Give k_mer: "))
         print("%s %13s" % (f'{k}-mer', 'count'))
         print('-' * 25)
