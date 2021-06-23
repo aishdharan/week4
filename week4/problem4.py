@@ -33,7 +33,6 @@ def main():
         usr_ask_prod = input("What product do you want to buy?")
         print("Product", usr_ask_prod)
         for key in prod_category:
-            #prod_category = input("Which category of product do you want to buy? ")
             print(key + ':', prod_category[key])
     # want to do something that'll make sure user only inputs the products :/
     #usr_quant = int(input("How many do you want to buy?"))
