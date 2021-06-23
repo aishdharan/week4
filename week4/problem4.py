@@ -20,6 +20,7 @@ def main():
             'macbook pro': 1799,
         }
     }
+
     print("Apple Catalogue", catalogue)
     usr_ask = input("What do you want to buy?")
     if usr_ask in catalogue.keys():
