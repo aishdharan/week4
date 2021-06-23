@@ -22,12 +22,19 @@ def main():
     }
 
     print("Apple Catalogue", catalogue)
-    usr_ask = input("What do you want to buy?")
-    if usr_ask in catalogue.keys():
+
+    #if usr_ask_prod in catalogue.keys():
         #usr_ask = catalogue.values()
-        print(catalogue.get(usr_ask, None))
-    else:
-        print("Please specify product mentioned in catalogue")
+     #   print(catalogue.get(usr_ask_prod, None))
+    #else:
+     #   print("Please specify product mentioned in catalogue")
+
+    for usr_ask_prod, prod_category in catalogue.items():
+        usr_ask_prod = input("What product do you want to buy?")
+        print("Product", usr_ask_prod)
+        for key in prod_category:
+            #prod_category = input("Which category of product do you want to buy? ")
+            print(key + ':', prod_category[key])
     # want to do something that'll make sure user only inputs the products :/
     #usr_quant = int(input("How many do you want to buy?"))
     #for _ in catalogue:
