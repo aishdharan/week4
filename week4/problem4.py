@@ -3,7 +3,6 @@ import sys
 
 
 def main():
-    global models
     catalogue = {
         'iphone': {
             'X': 800,
