@@ -19,6 +19,7 @@ def main():
     for k in range(3, 8):
         # fixme: here k from for loop is overwritten
         #k = int(input("Give k_mer: "))
+        print("k =", k)
         print("%s %13s" % (f'{k}-mer', 'count'))
         print('-' * 25)
         for value in range(len(seq) - k + 1):
