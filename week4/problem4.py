@@ -47,10 +47,12 @@ def main():
         print("Select product from given catalogue only")
     usr_model = input("Select a model: ")
     usr_quant = int(input("Select a quantity: "))
-    print("Model name:", usr_model)
-    print("Quantity:", usr_quant)
+
     if usr_model in catalogue.get(usr_prod, None):
+        print("Final Invoice")
+        print("Model name:", usr_model)
         print(f"Price of selected model: £{catalogue[usr_prod][usr_model]}")
+        print("Quantity:", usr_quant)
         print(f"Total price = £{usr_quant * catalogue[usr_prod][usr_model]}")
     else:
         print("Select product from given catalogue only")
