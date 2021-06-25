@@ -16,9 +16,9 @@ def main():
     print("Length of sequence =", len(seq))
     # fixme: we only need k to be 3 to 7
     #   start by solving the problem for k=3; the rest will follow
-    for k in range(len(seq)-1):
+    for k in range(3, 8):
         # fixme: here k from for loop is overwritten
-        k = int(input("Give k_mer: "))
+        #k = int(input("Give k_mer: "))
         print("%s %13s" % (f'{k}-mer', 'count'))
         print('-' * 25)
         for value in range(len(seq) - k + 1):
