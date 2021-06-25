@@ -20,12 +20,12 @@ def main():
         # fixme: here k from for loop is overwritten
         #k = int(input("Give k_mer: "))
         print("k =", k)
-        print("%s %13s" % (f'{k}-mer', 'count'))
+        print("%s %17s" % (f'{k}-mer', 'count'))
         print('-' * 25)
         for value in range(len(seq) - k + 1):
             val_k = seq[value: value + k]
             kmer_count = seq.count(val_k)
-            print("%s %13s" % (val_k, kmer_count))
+            print("%s %16s" % (val_k, kmer_count))
         print("=" * 25)
 
     # return os.X_OK
