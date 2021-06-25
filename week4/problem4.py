@@ -55,7 +55,7 @@ def main():
         print("Quantity:", usr_quant)
         print(f"Total price = £{usr_quant * catalogue[usr_prod][usr_model]}")
     else:
-        print("Select product from given catalogue only")
+        print("Select model from selected product category only")
 
     # try:
     #   assert usr_prod == catalogue.keys()
