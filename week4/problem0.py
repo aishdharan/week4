@@ -29,9 +29,10 @@ def main():
         # we write to sys.stderr for errors/warnings
         print("Give 10 characters only", file=sys.stderr)
         # terminate; user did not follow instructions
-        return os.EX_USAGE
+        return os.X_OK
+    # return os.EX_USAGE was giving error; I'm using windows
     # no need really since we know they should be 10
-    print(f"No. of characters given: {len(usr_char)}")
+    # print(f"No. of characters given: {len(usr_char)}")
     usr_dict = dict()
     for k in usr_char:
         # print(f"key {k}")
