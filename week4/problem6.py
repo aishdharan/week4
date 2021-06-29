@@ -7,7 +7,7 @@ def main():
     files = [f"file_{''.join(random.choices(string.ascii_lowercase, k=6))}.pdf" for _ in range(100)]
     print("files = ", files)
     # print("length of files =", len(files))
-    list_files = list(files)
+    # list_files = list(files)
     # print("list files=", list_files)
     # print("length of list files =", len(list_files))
     # files that have been completely processed
