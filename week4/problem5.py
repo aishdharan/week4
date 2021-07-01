@@ -340,13 +340,19 @@ def main():
     Fulvous 	#E48400 
     Fuzzy Wuzzy 	#87421F"""
     # print(colours)
-    colours_list = [y for y in (x.split('\t') for x in colours.splitlines()) if y]
+    colours_list = [y for y in (x.split("\t") for x in colours.splitlines()) if y]
     print(colours_list)
     colours_dict = dict(colours_list)
     print(colours_dict)
     new_cd = dict([(value, key) for key, value in colours_dict.items()])
     print(new_cd)
-
+    for key, value in new_cd.items():
+        if key[1:3] != 0:
+            key[1:3] = r
+        if key[3:5] != 0:
+            key[3:5] = g
+        if key[5:7] != 0:
+            key[5:7] = b
 
         # txt_lower = txt_lower.replace(p, ' ')
     # cd_sort = sorted(colours_dict, reverse=True)
