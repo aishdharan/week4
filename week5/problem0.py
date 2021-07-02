@@ -4,18 +4,26 @@ import random
 
 
 def main():
-    l = range(0, 101)
-    l1 = random.choices(l, k=100)
-    print(l1)
-    print(len(l1))
+    l = random.choices(range(0, 101), k=100)
+    print(l)
+    print(len(l))
     new_l = list()
     # print(new_l)
     j = 0
-    for i in l1:
+    # cumulative sum
+    for i in l:
         j += i
         new_l.append(j)
     print(new_l)
     print(len(new_l))
+    # Adjoint pair sum
+    new_l1 = [(l[k] + l[k + 1]) for k in range(0, len(l) - 1)]
+    print(new_l1)
+
+
+
+
+
     # print(l1[1::1])
 
     # j1 = 0
